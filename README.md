@@ -1,0 +1,1 @@
+# azure-name-checker
