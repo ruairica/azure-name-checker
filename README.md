@@ -10,3 +10,9 @@ combo box to select  | input.....  |
 when combo box is selected -> set the validation message
 validate input against validation rules, when combo box is changed, or input is typed in
 change styling of input / or something to reflect if the name is valid or not
+
+TODO
+add prettier
+get regex check working, display validation rules
+style
+deploy

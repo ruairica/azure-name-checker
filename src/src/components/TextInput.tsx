@@ -11,10 +11,8 @@ const TextInput: React.FC<TextInputProps> = ({ searchString }) => {
     setValue(e.target.value);
   };
 
-    const containsSearchString = value.includes(searchString);
-    const inputBackgroundColor = !(!!value)  ?  'bg-white' : containsSearchString ? 'bg-green-200' : 'bg-red-200';
-
-
+  const containsSearchString = value.includes(searchString);
+  const inputBackgroundColor = !(!!value)  ?  'bg-white' : containsSearchString ? 'bg-green-200' : 'bg-red-200';
 
   return (
     <div>
