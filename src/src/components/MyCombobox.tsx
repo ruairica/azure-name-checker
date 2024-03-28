@@ -23,13 +23,13 @@ export default function Example() {
         )
 
   return (
-    <div className="fixed top-16 w-72">
-      <Combobox value={selected} onChange={setSelected}>
+    <div className="flex gap-4 top-16 w-screen justify-center">
+      <Combobox value={selected} onChange={setSelected} className="w-96">
         <div className="relative mt-1">
           <div className="relative w-full cursor-default overflow-hidden rounded-lg bg-white text-left shadow-md focus:outline-none focus-visible:ring-2 focus-visible:ring-white/75 focus-visible:ring-offset-2 focus-visible:ring-offset-teal-300 sm:text-sm">
             <Combobox.Input
               className="w-full border-none py-2 pl-3 pr-10 text-sm leading-5 text-gray-900 focus:ring-0"
-              displayValue={(r: Resource) => r.resource + ' ' + r.property}
+              displayValue={(r: Resource) => r.resource + (!!r.property ? ' ' + r.property : '')}
               onChange={(event) => setQuery(event.target.value)}
             />
             <Combobox.Button className="absolute inset-y-0 right-0 flex items-center pr-2">
@@ -87,10 +87,13 @@ export default function Example() {
               )}
             </Combobox.Options>
           </Transition>
+          <div>hello</div>
+          <div>hello</div>
+
         </div>
       </Combobox>
 
-      {<TextInput searchString={selected.regx} />}
+      {<TextInput regx={selected.regx} />}
     </div>
   )
 }

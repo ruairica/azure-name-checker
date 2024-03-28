@@ -3,24 +3,24 @@ import Example from '../components/MyCombobox.tsx';
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="Welcome to Astro.">
-	<main>
+<Layout title="Azure Name Checker">
 		<!-- <h1>Welcome to <span class="text-gradient">Astro</span></h1> -->
-        <Example client:load/>
-<!--
-		<p class="instructions">
-			To get started, open the directory <code>src/pages</code> in your project.<br />
-			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-		</p> -->
-	</main>
+        <main>
+            <h1>Azure Resource Name Checker</h1>
+            <Example client:load/>
+            <!--
+                    <p class="instructions">
+                        To get started, open the directory <code>src/pages</code> in your project.<br />
+                        <strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
+                    </p> -->
+            <p class="instructions">soime text here</p>
+        </main>
 </Layout>
 
 <style>
 	main {
 		margin: auto;
 		padding: 1rem;
-		width: 800px;
-		max-width: calc(100% - 2rem);
 		color: white;
 		font-size: 20px;
 		line-height: 1.6;
@@ -40,6 +40,7 @@ import Layout from '../layouts/Layout.astro';
 		line-height: 1;
 		text-align: center;
 		margin-bottom: 1em;
+        margin-top: 6rem;
 	}
 	.text-gradient {
 		background-image: var(--accent-gradient);
@@ -54,14 +55,6 @@ import Layout from '../layouts/Layout.astro';
 		background: linear-gradient(rgba(var(--accent-dark), 66%), rgba(var(--accent-dark), 33%));
 		padding: 1.5rem;
 		border-radius: 8px;
-	}
-	.instructions code {
-		font-size: 0.8em;
-		font-weight: bold;
-		background: rgba(var(--accent-light), 12%);
-		color: rgb(var(--accent-light));
-		border-radius: 4px;
-		padding: 0.3em 0.4em;
 	}
 	.instructions strong {
 		color: rgb(var(--accent-light));
