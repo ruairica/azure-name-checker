@@ -5,7 +5,6 @@ const propertyLabels: Record<string, string> = {
   lengthMin: 'Minimum Length',
   lengthMax: 'Maximum Length',
   validText: 'Valid Text',
-  invalidText: 'Invalid Text',
   invalidCharacters: 'Invalid Characters',
   invalidCharactersStart: 'Invalid Starting Characters',
   invalidCharactersEnd: 'Invalid Ending Characters',
@@ -22,7 +21,7 @@ const Rules: React.FC<ResourceRules> = ( resource: ResourceRules ) => {
                 if (!!value) {
                 return (
                     <li key={key}>
-                    <span className="font-bold">{propertyLabels[key]}: {value}</span>
+                        <span>{propertyLabels[key]}:</span> {value}
                     </li>
                 );
                 }
