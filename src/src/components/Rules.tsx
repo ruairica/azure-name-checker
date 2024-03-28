@@ -12,11 +12,13 @@ const propertyLabels: Record<string, string> = {
   invalidCharactersConsecutive: 'Invalid Consecutive Characters',
 };
 
-const Rules: React.FC<ResourceRules> = ( resource ) => {
+const ResourceRuleKeys: (keyof ResourceRules)[] = ["lengthMin", "lengthMax", "validText", "invalidText", "invalidCharacters", "invalidCharactersStart", "invalidCharactersEnd", "invalidCharactersConsecutive"];
+
+const Rules: React.FC<ResourceRules> = ( resource: ResourceRules ) => {
   return (
     <div>
         <ul>
-            {Object.entries(resource).map(([key, value]) => {
+            {Object.entries(resource).filter(([k,_]) => ResourceRuleKeys.includes(k as keyof ResourceRules)).map(([key, value]) => {
                 if (!!value) {
                 return (
                     <li key={key}>

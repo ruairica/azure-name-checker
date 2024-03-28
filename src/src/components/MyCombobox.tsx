@@ -1,6 +1,7 @@
 import { Combobox, Transition } from '@headlessui/react';
 import { CheckIcon, ChevronUpDownIcon } from '@heroicons/react/20/solid';
 import { Fragment, useState } from 'react';
+import Rules from './Rules';
 import TextInput from './TextInput';
 import { resouces, type Resource } from './resources';
 
@@ -87,8 +88,7 @@ export default function Example() {
               )}
             </Combobox.Options>
           </Transition>
-          <div>hello</div>
-          <div>hello</div>
+          <Rules {...selected}/>
 
         </div>
       </Combobox>
