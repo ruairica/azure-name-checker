@@ -1,5 +1,5 @@
 
-export interface Resource {
+export interface Resource extends ResourceRules {
   id: number;
   resource: string;
   optional: string;
@@ -7,6 +7,11 @@ export interface Resource {
   property: string;
   ShortName: string;
   scope: string;
+  regx: string;
+  staticValues: string;
+}
+
+export interface ResourceRules {
   lengthMin: string;
   lengthMax: string;
   validText: string;
@@ -15,8 +20,6 @@ export interface Resource {
   invalidCharactersStart: string;
   invalidCharactersEnd: string;
   invalidCharactersConsecutive: string;
-  regx: string;
-  staticValues: string;
 }
 export const resouces : Resource[] =
 [
