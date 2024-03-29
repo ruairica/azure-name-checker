@@ -22,7 +22,7 @@ const ResourceRuleKeys: (keyof ResourceRules)[] = [
   "invalidCharactersConsecutive",
 ];
 
-const Rules: React.FC<ResourceRules> = (resource: ResourceRules) => {
+const RulesInformation: React.FC<ResourceRules> = (resource: ResourceRules) => {
   return (
     <div
       className="bg-blue-100 border-l-4 mt-3 border-blue-500 text-blue-700 p-4 rounded-md shadow-md"
@@ -51,4 +51,4 @@ const Rules: React.FC<ResourceRules> = (resource: ResourceRules) => {
   );
 };
 
-export default Rules;
+export default RulesInformation;

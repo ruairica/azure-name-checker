@@ -1,20 +1,20 @@
 import { Combobox, Transition } from "@headlessui/react";
 import { CheckIcon, ChevronUpDownIcon } from "@heroicons/react/20/solid";
 import { Fragment, useState } from "react";
-import Rules from "./Rules";
+import RulesInformation from "./RulesInformation";
 import TextInput from "./TextInput";
-import { resouces, type Resource } from "./resources";
+import { allResources, type Resource } from "./resources";
 
-const resources = resouces;
+const resources = allResources;
 
-export default function Example() {
-  const [selected, setSelected] = useState(resources[330]);
+export default function NameChecker() {
+  const [selected, setSelected] = useState(allResources[183]);
   const [query, setQuery] = useState("");
 
   const filteredPeople =
     query === ""
-      ? resources
-      : resources.filter((r) =>
+      ? allResources
+      : allResources.filter((r) =>
           (r.resource + r.property + r.ShortName)
             .toLowerCase()
             .replace(/\s+/g, "")
@@ -88,7 +88,7 @@ export default function Example() {
               )}
             </Combobox.Options>
           </Transition>
-          <Rules {...selected} />
+          <RulesInformation {...selected} />
         </div>
       </Combobox>
 

@@ -20,7 +20,8 @@ export interface ResourceRules {
   invalidCharactersEnd: string;
   invalidCharactersConsecutive: string;
 }
-export const resouces: Resource[] = [
+
+export const allResources: Resource[] = [
   {
     id: 1,
     resource: "AnalysisServices/servers",
