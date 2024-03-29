@@ -1,18 +1,9 @@
 # azure-name-checker
 
-https://headlessui.com/react/combobox
-https://docs.astro.build/en/guides/framework-components/#using-framework-components
+style - change favicon,
+style - remove horizontal scroll
 
-combo box to select  | input.....  |
-       validation messsage
-
-
-when combo box is selected -> set the validation message
-validate input against validation rules, when combo box is changed, or input is typed in
-change styling of input / or something to reflect if the name is valid or not
-
-TODO
-add prettier
-get regex check working, display validation rules
-style
+add some text at the bottom,
+about reserved keywords and existing azure resources and refer to docs
+reemove unused css
 deploy

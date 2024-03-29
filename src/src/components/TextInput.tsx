@@ -1,18 +1,21 @@
-import { useState, type SetStateAction } from 'react';
-
+import { useState, type SetStateAction } from "react";
 
 interface TextInputProps {
   regx: string;
 }
 const TextInput: React.FC<TextInputProps> = ({ regx }) => {
-  const [value, setValue] = useState('');
+  const [value, setValue] = useState("");
 
-  const handleChange = (e: { target: { value: SetStateAction<string>; }; }) => {
+  const handleChange = (e: { target: { value: SetStateAction<string> } }) => {
     setValue(e.target.value);
   };
 
   const containsSearchString = new RegExp(regx, "u").test(value); // value.includes(searchString);
-  const inputBackgroundColor = !(!!value)  ?  'bg-white' : containsSearchString ? 'bg-green-200' : 'bg-red-200';
+  const inputBackgroundColor = !!!value
+    ? "bg-white"
+    : containsSearchString
+      ? "bg-green-200"
+      : "bg-red-200";
 
   return (
     <div className="w-96">
