@@ -10,7 +10,7 @@ import { resouces, type Resource } from './resources';
 const resources = resouces;
 
 export default function Example() {
-  const [selected, setSelected] = useState(resources[0])
+  const [selected, setSelected] = useState(resources[330])
   const [query, setQuery] = useState('')
 
   const filteredPeople =
