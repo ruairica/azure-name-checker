@@ -22,7 +22,7 @@ export default function Example() {
         );
 
   return (
-    <div className="flex gap-4 top-16 w-screen justify-center">
+    <div className="flex gap-4 top-16 w-full justify-center">
       <Combobox value={selected} onChange={setSelected} className="w-96">
         <div className="relative mt-1">
           <div className="relative w-full cursor-default overflow-hidden rounded-lg bg-white text-left shadow-md focus:outline-none focus-visible:ring-2 focus-visible:ring-white/75 focus-visible:ring-offset-2 focus-visible:ring-offset-teal-300 sm:text-sm">
