@@ -5,8 +5,6 @@ import RulesInformation from "./RulesInformation";
 import TextInput from "./TextInput";
 import { allResources, type Resource } from "./resources";
 
-const resources = allResources;
-
 export default function NameChecker() {
   const [selected, setSelected] = useState(allResources[183]);
   const [query, setQuery] = useState("");
