@@ -5,17 +5,17 @@ import Layout from '../layouts/Layout.astro'
 
 <Layout title="Azure Name Checker">
   <h1 class="text-6xl font-bold text-center mb-4 mt-24 text-white">
-    Azure Resource Name Checker.
+    Azure Resource Name Checker
   </h1>
   <main class="mx-auto p-4 text-white text-xl leadin-relaxed">
     <NameChecker client:load />
     <div class="flex flex-col items-center px-40 mt-20">
-      <p class="text-gray-600 text-center mb-4">
+      <p class="text-blue-300 text-center mb-4">
         The name checker only checks formatting rules, your deployment may still
         fail if the name includes reserved keywords for that resource type, or
         if the name is already in use.
       </p>
-      <p class="text-gray-600 text-center">
+      <p class="text-blue-300 text-center">
         This website is not affiliated with, endorsed by, or sponsored by
         Microsoft Azure.
       </p>

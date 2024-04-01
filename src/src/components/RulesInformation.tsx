@@ -1,26 +1,26 @@
-import type { ResourceRules } from "./resources";
+import type { ResourceRules } from './resources'
 
 const propertyLabels: Record<string, string> = {
-  lengthMin: "Minimum Length",
-  lengthMax: "Maximum Length",
-  validText: "Valid Text",
-  invalidText: "Invalid Text",
-  invalidCharacters: "Invalid Characters",
-  invalidCharactersStart: "Invalid Starting Characters",
-  invalidCharactersEnd: "Invalid Ending Characters",
-  invalidCharactersConsecutive: "Invalid Consecutive Characters",
-};
+  lengthMin: 'Minimum Length',
+  lengthMax: 'Maximum Length',
+  validText: 'Valid Text',
+  invalidText: 'Invalid Text',
+  invalidCharacters: 'Invalid Characters',
+  invalidCharactersStart: 'Invalid Starting Characters',
+  invalidCharactersEnd: 'Invalid Ending Characters',
+  invalidCharactersConsecutive: 'Invalid Consecutive Characters',
+}
 
 const ResourceRuleKeys: (keyof ResourceRules)[] = [
-  "lengthMin",
-  "lengthMax",
-  "validText",
-  "invalidText",
-  "invalidCharacters",
-  "invalidCharactersStart",
-  "invalidCharactersEnd",
-  "invalidCharactersConsecutive",
-];
+  'lengthMin',
+  'lengthMax',
+  'validText',
+  'invalidText',
+  'invalidCharacters',
+  'invalidCharactersStart',
+  'invalidCharactersEnd',
+  'invalidCharactersConsecutive',
+]
 
 const RulesInformation: React.FC<ResourceRules> = (resource: ResourceRules) => {
   return (
@@ -42,13 +42,13 @@ const RulesInformation: React.FC<ResourceRules> = (resource: ResourceRules) => {
                   </span>
                   <span className="flex-1">{value}</span>
                 </li>
-              );
+              )
             }
-            return null;
+            return null
           })}
       </ul>
     </div>
-  );
-};
+  )
+}
 
-export default RulesInformation;
+export default RulesInformation
