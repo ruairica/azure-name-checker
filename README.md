@@ -1,2 +1,2 @@
-# azure-name-checker
-https://white-plant-072380d03.5.azurestaticapps.net
+Verify your azure resource names are valid syntax.
+https://www.azurenamechecker.com/
