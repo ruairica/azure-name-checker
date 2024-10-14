@@ -21,6 +21,7 @@ export interface ResourceRules {
   invalidCharactersConsecutive: string
 }
 
+// from: https://github.com/mspnp/AzureNamingTool/blob/9f83fc1ed6ddc09bc4920cc864b5bab3c1c91343/src/repository/resourcetypes.json
 export const allResources: Resource[] = [
   {
     id: 1,
