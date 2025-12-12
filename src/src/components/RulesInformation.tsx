@@ -28,7 +28,7 @@ const RulesInformation: React.FC<ResourceRules> = (resource: ResourceRules) => {
       className="bg-blue-100 border-l-4 mt-3 border-blue-500 text-blue-700 p-4 rounded-md shadow-md"
       role="alert"
     >
-      <ul className="list-disc list-inside text-base">
+      <ul className="list-disc list-inside text-sm sm:text-base">
         {Object.entries(resource)
           .filter(([k, _]) =>
             ResourceRuleKeys.includes(k as keyof ResourceRules),

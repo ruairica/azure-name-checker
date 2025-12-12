@@ -18,7 +18,7 @@ const TextInput: React.FC<TextInputProps> = ({ regx }) => {
       : 'bg-red-200'
 
   return (
-    <div className="w-96">
+    <div className="w-full lg:w-96">
       <input
         type="text"
         aria-label="Resource name"
