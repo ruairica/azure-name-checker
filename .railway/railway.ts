@@ -13,6 +13,7 @@ export default defineRailway(() => {
     env: {
       RAILPACK_SPA_OUTPUT_DIR: "dist",
     },
+    domains: ["www.azurenamechecker.com"],
     healthcheck: "/health",
     deploy: {
       sleepApplication: true,
